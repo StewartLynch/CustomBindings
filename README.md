@@ -1,6 +1,6 @@
 # Custom Bindings
 
-![mac128](Images/mac128.png) This is the Starter Project for the video on Custom Bindings in SwiftUI
+![mac128](Images/mac128.png) This is the completed source code for the video on Custom Bindings in SwiftUI
 
 
 
