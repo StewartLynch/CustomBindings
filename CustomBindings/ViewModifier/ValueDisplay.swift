@@ -15,11 +15,17 @@
 
 import SwiftUI
 
-@main
-struct CustomBindingsApp: App {
-    var body: some Scene {
-        WindowGroup {
-            StartTab()
-        }
+struct ValueDisplay: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+            .font(.caption)
+            .foregroundStyle(.secondary)
+            .frame(maxWidth: .infinity, alignment: .trailing)
+    }
+}
+
+extension Text {
+    func valueDisplay() -> some View {
+        modifier(ValueDisplay())
     }
 }

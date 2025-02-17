@@ -15,18 +15,22 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct StartTab: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        TabView {
+            Tab("Optionals", systemImage: "1.circle") {
+                OptionalBindings()
+            }
+            Tab("NonOptionals", systemImage: "2.circle") {
+                NonOptionalExample()
+            }
+            Tab("ViewModels", systemImage: "3.circle") {
+                ViewModelExample()
+            }
         }
-        .padding()
     }
 }
 
 #Preview {
-    ContentView()
+    StartTab()
 }

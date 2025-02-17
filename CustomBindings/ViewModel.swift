@@ -15,11 +15,15 @@
 
 import SwiftUI
 
-@main
-struct CustomBindingsApp: App {
-    var body: some Scene {
-        WindowGroup {
-            StartTab()
-        }
+@Observable
+class ViewModel {
+    var firstName: String
+    var middleName: String?
+    var lastName: String
+    
+    init(firstName: String, middleName: String? = nil, lastName: String) {
+        self.firstName = firstName
+        self.middleName = middleName
+        self.lastName = lastName
     }
 }
