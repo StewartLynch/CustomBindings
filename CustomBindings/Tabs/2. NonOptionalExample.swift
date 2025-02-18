@@ -15,7 +15,13 @@
 import SwiftUI
 
 struct NonOptionalExample: View {
-    @State private var sliderValue: Double = 5.0
+    @State private var sliderValue: Int = 5
+    private var doubleBinding: Binding<Double> {
+        Binding(
+            get: { Double(sliderValue) },
+            set: { sliderValue = Int($0) }
+        )
+    }
     var body: some View {
         NavigationStack {
             Text("There other cases where creating your own custom bindings can be really useful, particularly if your underlying models use different Types from what the controls you are using require, like we saw with optionals for a TextField to a String or a DatePicker.")
@@ -24,7 +30,7 @@ struct NonOptionalExample: View {
                 .padding()
             Form {
                 Section("Binding a Slider to an Int") {
-                    Slider(value: $sliderValue, in: 1...100, step: 1.0)
+                    Slider(value: doubleBinding, in: 1...100, step: 1)
                     Text("\(Int(sliderValue))")
                         .font(.system(size: 100))
                         .frame(maxWidth: .infinity, alignment: .center)

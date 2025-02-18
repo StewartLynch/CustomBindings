@@ -19,6 +19,12 @@ import SwiftUI
 class ViewModel {
     var firstName: String
     var middleName: String?
+    var middleBinding: Binding<String> {
+        Binding(
+            get: { self.middleName ?? "" },
+            set: { self.middleName = $0.isEmpty ? nil : $0 }
+        )
+    }
     var lastName: String
     
     init(firstName: String, middleName: String? = nil, lastName: String) {

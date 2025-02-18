@@ -25,6 +25,7 @@ struct ViewModelExample: View {
             Form {
                 Section("Working with ViewModels") {
                     TextField("First Name", text: $viewModel.firstName)
+                    TextField("Middle Name", text: viewModel.middleBinding)
                     TextField("Last Name", text: $viewModel.lastName)
                 }
             }
