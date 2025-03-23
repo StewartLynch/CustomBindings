@@ -2,7 +2,9 @@
 
 ![mac128](Images/mac128.png) This is the Starter Project for the video on Custom Bindings in SwiftUI
 
-
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=t6bNewsQGJI
+" target="_blank"><img src="http://img.youtube.com/vi/t6bNewsQGJI/0.jpg" 
+alt="Case for Custom Bindings" width="480" height="360" border="1" /></a>
 
 If you want to support my work, you can - </br>
 
