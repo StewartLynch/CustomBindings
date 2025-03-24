@@ -2,9 +2,9 @@
 
 ![mac128](Images/mac128.png) This is a new branch that has added an extension for Binding that makes using optionals much easier.
 
-This removes the necessity to create your own custom binding for optionals and instead can use a different initializer.
+ ![QuickHelp](Images/QuickHelp.png)  
 
-![CleanShot 2025-03-24 at 10.24.40](assets/CleanShot 2025-03-24 at 10.24.40.png)
+This removes the necessity to create your own custom binding for optionals and instead can use a different initializer.
 
 The gist can be downloaded from:
 
